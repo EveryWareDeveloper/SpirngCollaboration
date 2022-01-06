@@ -1,4 +1,4 @@
-package com.coll.Controller;
+package com.coll.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

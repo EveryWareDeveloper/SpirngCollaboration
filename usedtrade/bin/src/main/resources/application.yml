@@ -11,7 +11,7 @@ spring:
       
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/jpadb?serverTimezone=Asia/Seoul&&characterEncoding=UTF-8
+    url: jdbc:mysql://localhost:3306/usedtrade?serverTimezone=Asia/Seoul&&characterEncoding=UTF-8
     username: root
     password: 1234
     
