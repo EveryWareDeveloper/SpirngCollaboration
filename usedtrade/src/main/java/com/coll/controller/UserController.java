@@ -2,6 +2,7 @@ package com.coll.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -28,6 +29,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 // 그냥 주소가 / 이면 index.jsp 허용
 // static이하에 있는 /js/**, /css/**, /image/**
 
+@ComponentScan
 @Controller
 public class UserController {
 
