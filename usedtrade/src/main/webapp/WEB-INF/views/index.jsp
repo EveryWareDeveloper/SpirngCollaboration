@@ -29,7 +29,8 @@
  <c:when test="${blist.pageable.pageNumber+1 == i}"> 
  <li class="page-item disabled">
  <a class="page-link" href="?field=${param.field}&word=${param.word}&page=${i-1}">${i}</a></li> 
- </c:when> <c:otherwise> 
+ </c:when>
+  <c:otherwise> 
  <li class="page-item">
  <a class="page-link" href="?field=${param.field}&word=${param.word}&page=${i-1}">${i}</a></li> 
  </c:otherwise> 

@@ -55,7 +55,7 @@ public class BoardController {
 		
 		int pageNumber=blist.getPageable().getPageNumber();
 		//현재페이지 
-		int totalPages=blist.getTotalPages(); //총 페이지 수 . 검색에따라 10개면 10개.. 
+		int totalPages=blist.getTotalPages(); //총 페이지 수  . 검색에따라 10개면 10개.. 
 		int pageBlock = 5;
 		//블럭의 수 1, 2, 3, 4, 5 
 		int startBlockPage = ((pageNumber)/pageBlock)*pageBlock+1; 
@@ -67,8 +67,11 @@ public class BoardController {
 		
 		model.addAttribute("startBlockPage", startBlockPage);
 		model.addAttribute("endBlockPage", endBlockPage);
+		model.addAttribute("blist", blist);
 
+		출처: https://amongthestar.tistory.com/173 [cozy coding]
 		model.addAttribute("boards", boardService.글목록(pageable));
+		
 		return "index"; // viewResolver 작동!!
 	}
 	
