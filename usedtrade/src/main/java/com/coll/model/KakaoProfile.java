@@ -24,6 +24,8 @@ public class KakaoProfile {
 		public Boolean email_needs_agreement;
 		public Boolean is_email_valid;
 		public Boolean is_email_verified;
+		public Boolean profile_nickname_needs_agreement;
+		public Boolean profile_image_needs_agreement;
 		public String email;
 
 		@Data
@@ -31,6 +33,7 @@ public class KakaoProfile {
 			public String nickname;
 			public String thumbnail_image_url;
 			public String profile_image_url;
+			public Boolean is_default_image;
 		}
 	}
 }

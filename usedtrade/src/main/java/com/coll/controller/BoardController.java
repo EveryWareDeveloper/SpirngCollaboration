@@ -69,8 +69,7 @@ public class BoardController {
 		model.addAttribute("endBlockPage", endBlockPage);
 		model.addAttribute("blist", blist);
 
-		출처: https://amongthestar.tistory.com/173 [cozy coding]
-		model.addAttribute("boards", boardService.글목록(pageable));
+	model.addAttribute("boards", boardService.글목록(pageable));
 		
 		return "index"; // viewResolver 작동!!
 	}
